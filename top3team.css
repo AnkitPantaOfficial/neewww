@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Teko:wght@300;400;500;600&display=swap');
+
+.elimframe1{
+    height: 1080px;
+    width: 1920px;
+    display: flex;
+    align-items: center;
+
+}
+.logoframe5 {
+    background-color: #003557;
+    border: 6px solid;
+    border-color: #0182d5;
+    box-shadow: inset 0px 0px 25px -4px #000000ed;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    left: 278px;
+    top: 352px;
+    transform: rotate(-45deg);
+    overflow: hidden;
+}
+.topteamlogo{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 6px;  
+    left: 6px;
+     
+}
+
+.group12{
+    position: absolute;
+    left: 250px;
+    top: 406px;
+    height: 28px;
+    width: 281px;
+    background-color: #0182d5;
+    font-size: 23px;
+    font-family: Teko;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 10% 100%);
+}
+
+.design11{
+    height: 35px;
+    width: 46px;
+    background-color: #0182d5;
+    position: absolute;
+    left: 528px;
+    top: 369px;
+    clip-path: polygon(80.5% 0%, 100% 0%, 20.5% 100%, 0% 100%);
+    opacity: 0.7;
+}
+
+.alive{
+    position: absolute;
+    left: 263px;
+    top: 369px;
+    height: 36px;
+    width: 298px;
+    background-color: #003557;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(13.5% 0%, 100% 0%, 86.5% 100%, 0% 100%);
+}
+
+.NTH{
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    top: 320px;
+}
+.wwcd{
+    position: absolute;
+    left: 110px;
+}
+.percentage{
+    position: absolute;
+    left: 200px;
+    
+}
+
+.player1{
+    width: 10px;
+    height: 20px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 15px;
+    position: relative;
+    left: 30px;
+}

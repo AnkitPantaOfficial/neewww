@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Teko:wght@300;400;500;600&display=swap');
+
+.elimframe{
+    height: 1080px;
+    width: 1920px;
+    display: flex;
+    align-items: center;
+
+}
+.logoframe {
+    background-color: #003557;
+    border: 9px solid;
+    border-color: #0182d5;
+    box-shadow: inset 0px 0px 25px -4px #000000ed;
+    height: 220px;
+    width: 220px;
+    position: absolute;
+    left: 222px;
+    top: 401px;
+    transform: rotate(-45deg);
+    overflow: hidden;
+}
+.tournamentlogo {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 6px;  
+    left: 6px;
+     
+}
+.serverlogo {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 6px;  
+    left: 6px;
+     
+}
+.daybox{
+    position: absolute;
+    left: 381px;
+    top: 385px;
+    height: 36px;
+    width: 310px;
+    background-color: #003557;
+    font-size: 30px;
+    font-family: teko;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0% 0%, 89% 0%, 100% 100%,12% 100%);
+
+
+}
+.group{
+    position: absolute;
+    left: 420px;
+    top: 425px;
+    height: 88px;
+    width: 482px;
+    background-color: #0182d5;
+    font-size: 50px;
+    font-family: Teko;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0% 0%, 82% 0%, 100% 100%, 18.5% 100%);
+
+}
+
+.design{
+    height: 88px;
+    width: 114px;
+    background-color: #0182d5;
+    position: absolute;
+    left: 822px;
+    top: 425px;
+    clip-path: polygon(0% 0%, 22% 0%, 100% 100%, 78% 100%);
+    opacity: 0.7;
+}
+.design2{
+    height: 88px;
+    width: 114px;
+    background-color: #0182d5;
+    position: absolute;
+    left: 857px;
+    top: 425px;
+    clip-path: polygon(0% 0%, 22% 0%, 100% 100%, 78% 100%);
+    opacity: 0.5;
+}
+.design3{
+    height: 88px;
+    width: 114px;
+    background-color: #0182d5;
+    position: absolute;
+    left: 890px;
+    top: 425px;
+    clip-path: polygon(0% 0%, 22% 0%, 100% 100%, 78% 100%);
+    opacity: 0.3;
+}
+
+.Match{
+    position: absolute;
+    left: 425px;
+    top: 523px;
+    height: 88px;
+    width: 550px;
+    background-color: #003557;
+    font-size: 50px;
+    font-family: Teko;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(16% 0%, 100% 0%, 84% 100%, 0% 100%);
+
+}
+.tournamentname{
+    position: absolute;
+    left: 386px;
+    top: 614px;
+    height: 36px;
+    width: 455px;
+    background-color: #003557;
+    font-size: 30px;
+    font-family: teko;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+}

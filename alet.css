@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Teko:wght@300;400;500;600&display=swap');
+
+.elimframe1{
+    height: 1080px;
+    width: 1920px;
+    display: flex;
+    align-items: center;
+
+}
+.logoframe1 {
+    background-color: #003557;
+    border: 9px solid;
+    border-color: #0182d5;
+    box-shadow: inset 0px 0px 25px -4px #000000ed;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    left: 222px;
+    top: 401px;
+    transform: rotate(-45deg);
+    overflow: hidden;
+}
+.teamlogo1{
+    height: 110px;
+    width: 110px;
+    object-fit: cover;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 6px;  
+    left: 6px;
+     
+}
+.tournamentlogo2{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    position: absolute;
+    transform: rotate(339deg);
+    top: -75px;
+    opacity: 0.8;
+    
+     
+}
+.tournamentlogo3{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    position: absolute;
+    transform: rotate(339deg);
+    top: -145px;
+    opacity: 0.8;
+     
+}
+
+.group1{
+    position: absolute;
+    left: 330px;
+    top: 406px;
+    height: 60px;
+    width: 382px;
+    background-color: #0182d5;
+    font-size: 42px;
+    font-family: Teko;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0% 0%, 84% 0%, 100% 100%, 16.5% 100%);
+
+}
+.backimg1{
+    position: absolute;
+    left: 330px;
+    top: 406px;
+    height: 60px;
+    width: 382px;
+    background-color: #d2d2d2;
+    clip-path: polygon(0% 0%, 84% 0%, 100% 100%, 16.5% 100%);
+
+}
+.backimg2{
+    position: absolute;
+    left: 330px;
+    top: 475px;
+    height: 60px;
+    width: 443px;
+    background-color: #d2d2d2;
+    clip-path: polygon(13.5% 0%, 100% 0%, 86.5% 100%, 0% 100%);
+}
+
+.design1{
+    height: 60px;
+    width: 78px;
+    background-color: #0182d5;
+    position: absolute;
+    left: 655px;
+    top: 406px;
+    clip-path: polygon(0% 0%, 22% 0%, 100% 100%, 78% 100%);
+    opacity: 0.7;
+}
+.design21{
+    height: 60px;
+    width: 78px;
+    background-color: #0182d5;
+    position: absolute;
+    left: 675px;
+    top: 406px;
+    clip-path: polygon(0% 0%, 22% 0%, 100% 100%, 78% 100%);
+    opacity: 0.5;
+}
+.design31{
+    height: 60px;
+    width: 78px;
+    background-color: #0182d5;
+    position: absolute;
+    left: 695px;
+    top: 406px;
+    clip-path: polygon(0% 0%, 22% 0%, 100% 100%, 78% 100%);
+    opacity: 0.3;
+}
+
+.Match1{
+    position: absolute;
+    left: 330px;
+    top: 475px;
+    height: 60px;
+    width: 443px;
+    background-color: #003557;
+    font-size: 50px;
+    font-family: Teko;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(13.5% 0%, 100% 0%, 86.5% 100%, 0% 100%);
+}

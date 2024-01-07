@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Teko:wght@300;400;500;600&display=swap');
+
+
+.bloodframe{
+    height: 1080px;
+    width: 1920px;
+
+}
+.bloodlogoframe {
+    background-color: #003557;
+    border: 9px solid;
+    border-color: #0182d5;
+    box-shadow: inset 0px 0px 25px -4px #000000ed;
+    height: 296px;
+    width: 296px;
+    position: absolute;
+    left: 222px;
+    top: 401px;
+    transform: rotate(-45deg);
+    overflow: hidden;
+}
+.bloodteamlogo {
+    height: 600px;
+    width: 600px;
+    object-fit: cover;
+    position: absolute;
+    transform: rotate(20deg);
+    top: -129px;  
+    left: -129px;
+     
+}
+.playerphoto{
+    height: 538px;
+    width: 538px;
+    left: 114px;
+    top: 263px;
+    position: absolute;
+    object-fit: cover;
+}
+.design4{
+    height: 152px;
+    left: 204px;
+    position: absolute;
+    top: 592px;
+    width: 333px;
+    background-color: #003557;
+    clip-path: polygon(0% 0%, 50% 98.17%, 100% 0%, 100% 100%, 0% 100%);
+    border: 9px solid;
+    border-color: #0182d5;
+    
+}
+.designbckground{
+    height: 177px;
+    width: 354px;
+    opacity: 0.15;
+
+}
+.firstblod{
+    height: 50px;
+    width: 400px;
+    background-color: #003557;
+    top: 751px;
+    left: 171px;
+    position: absolute;
+    border: 9px solid;
+    border-color: #0182d5;
+    font-family: Teko;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

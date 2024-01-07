@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Teko:wght@300;400;500;600&display=swap');
+
+.screen{
+    height: 1400px;
+    width: 1920px;
+    overflow: hidden;
+}
+.backgroundcolor{
+    height: 1765px;
+    width: 719px;
+    background-color: #016EB5;
+    opacity: 0.92;
+    position: absolute;
+    left: 1460px;
+    filter: blur(40px);
+}
+.screenplayerphoto{
+    position: absolute;
+    left: 1050px;
+    top: 599px;
+    height: 800px;
+    width: 800px;
+}
+.player-logo{
+    position: absolute;
+    left: 1594px;
+    height: 300px;
+    width: 300px;
+    top: 308px;
+    object-fit: cover;
+    justify-content: center;
+    display: flex;
+
+}
+.kills-text{
+    color: white;
+    font-size: 90px;
+    font-family: Teko;
+    position: absolute;
+    font-weight: 400;
+    text-decoration: underline;
+ 
+
+}
+.kills{
+    color: white ;
+    font-size: 100px;
+    font-family: Teko;
+    font-weight: 500;
+    position: relative;
+    top: -80px;
+  
+
+}
+.otext{
+    left: 1500px;
+    height: 900px;
+    width: 500px;
+    position: absolute;
+    top: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.texts{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    
+}
+.texts1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.texts2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.playyername{
+    position: absolute;
+    left: -100px;
+    top: 600px;
+    background-color: #002a47;
+    width:540px;
+    height: 60px;
+    font-size: 120px;
+    font-family: Teko;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}.screennamee{
+    position: absolute;
+    left: -60px;
+    top: 670px;
+    background-color: #002a47;
+    width:500px;
+    height: 60px;
+    font-size: 50px;
+    font-family: Teko;
+    color: white;
+    font-weight: 650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
