@@ -53,6 +53,47 @@ const Screen = () => {
       setPhoto(JSON.parse(Data));
     }
   }, []);
+  const [primaryColor, setPrimaryColor] = useState('#000000');
+  const [secondaryColor, setSecondaryColor] = useState('#000000');
+ 
+  useEffect(() => {
+    const Data = localStorage.getItem('alive');
+
+    if (Data) {
+        setPrimaryColor(JSON.parse(Data));
+    }
+}, []);
+  useEffect(() => {
+    const Data = localStorage.getItem('alive');
+
+    if (Data) {
+        setSecondaryColor(JSON.parse(Data));
+    }
+}, []);
+
+  useEffect(() => {
+    const fetchDataFromApi = async () => {
+      try {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbz5MaS11pgUeKkrXBXricCRDD71zmPapnT0yeeq75mcTpW7ivy_sVGSK9uf9fajK79T/exec');
+        const data = await response.json();
+
+        const primaryColorItem = data.data.find(item => item.MATCH === 'Primary Color');
+        const secondaryColorItem = data.data.find(item => item.MATCH === 'Secondary Color');
+
+        if (primaryColorItem) {
+          setPrimaryColor(primaryColorItem.MAP);
+        }
+
+        if (secondaryColorItem) {
+          setSecondaryColor(secondaryColorItem.MAP);
+        }
+      } catch (error) {
+        console.error('Error fetching data from API:', error);
+      }
+    };
+
+    fetchDataFromApi();
+  }, []);
 
  
 
@@ -60,7 +101,7 @@ const Screen = () => {
     <div className="screen">
       {TopPlayers.map((ele, index) => (
         <div key={index}>
-          <div className="backgroundcolor"></div>
+          <div className="backgroundcolor"style={{ backgroundColor: primaryColor }}></div>
           <img className="screenplayerphoto" src={findPhoto(ele.PlayerName)} alt={`Player Photo - ${ele.PlayerName}`} />
           <div className="player-logo"><img  src={ele.TeamLogo} alt={`Player Logo - ${ele.PlayerName}`} /></div>
           <div className="otext">
@@ -76,12 +117,11 @@ const Screen = () => {
               <div className="kills-text">RANK</div>
               <div className="kills">{ele.Rank}</div>
             </div>
-            <div className="playyername">
+            <div className="playyername"style={{ backgroundColor: secondaryColor }}>
               <div className="nname">{ele.Player}</div>
             </div>
-            <div className="screenteamname">
-              <div className="screennamee">G{ele.TeamName}</div>
-            </div>
+              <div className="screennamee"style={{ backgroundColor: secondaryColor }}>{ele.TeamName}</div>
+      
           </div>
         </div>
       ))}
