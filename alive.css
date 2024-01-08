@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Teko:wght@300;400;500;600&display=swap');
+
+.aliveframe{
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+}
+.alivetopbox{
+    height: 37px;
+    width: 286px;
+    background-color: rgb(95, 0, 0);
+    position: absolute;
+    top: 513px;
+    left: 1634px;
+    font-family: teko;
+    font-size: 30px;
+    font-weight: 500;
+    overflow: hidden;
+    color: white;
+}
+.alivetext1{
+    position: absolute;
+    left: 10px;
+}
+
+.dead {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    left: 150px;
+    top: 14px;
+}
+.alivecolor {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(255, 255, 255);
+    left: 220px;
+    top: 14px;
+}
+.alivetext2 {
+    position: absolute;
+    left: 165px;
+    font-size: 22px;
+    top: 5px;   
+}
+.alivetext3 {
+    position: absolute;
+    left: 235px;
+    font-size: 22px;
+    top: 5px;   
+}
+.alivestatsbox{
+    height: 38px;
+    width: 286px;
+    font-family: teko;
+    font-size: 30px;
+    font-weight: 500;
+    overflow: hidden;
+    color: white;
+}
+.alivestatsboxcolor{
+    height: 38px;
+    width: 286px;
+    background-color: rgb(95, 0, 0);
+    opacity: 0.80;
+}
+.alivestatsall{
+    position: absolute;
+    top: 552px;
+    left: 1634px;
+    overflow: hidden;
+}
+.aliverank{
+    width: 36px;
+    height:39px;
+    position: relative;
+    left: 6px;
+    top: -39px;
+}
+.alivelogo{
+    height: 38px;
+    width: 38px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    left: 43px;
+    object-fit: cover;
+    top: -77px;
+}
+.aliveteamlogo{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.alivetext4{
+    position: relative;
+    top: -109px;
+    left: 86px;
+    font-size:20px ;
+}
+.alivekills{
+    position: relative;
+    top: -144px;
+    left: 234px;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    height: 39px;
+    width: 52px;
+}
+.aliv1{
+    background-color: white;
+    height: 15px;
+    width: 12px;
+    position: absolute;
+    top: 0px;
+    left: 189px;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+.aliv2{
+    background-color: white;
+    height: 15px;
+    width: 12px;
+    position: absolute;
+    top: 0px;
+    left: 203px;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+.aliv3{
+    background-color: white;
+    height: 15px;
+    width: 12px;
+    position: absolute;
+    top: 16.5px;
+    left: 189px;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+}
+.aliv4{
+    background-color: white;
+    height: 15px;
+    width: 12px;
+    position: absolute;
+    top: 16.5px;
+    left: 203px;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+.aliveplayer4{
+    position: relative;
+    top: -181px;
+}
+
+.playerTrue {
+    background-color: rgb(255, 0, 0);
+  }
+  
+  .playerFalse {
+    background-color: rgb(255, 255, 255)
+  }
+  /* In your CSS file or in a style block in your component */
+.allPlayersTrue {
+   
+    opacity: 0.7; 
+  }
+  
+  
