@@ -62,24 +62,64 @@ const Live = () => {
       // Clean up the interval when the component unmounts
       return () => clearInterval(intervalId);
   }, []);
-    
+  const [primaryColor, setPrimaryColor] = useState('#000000');
+  const [secondaryColor, setSecondaryColor] = useState('#000000');
+ 
+  useEffect(() => {
+    const Data = localStorage.getItem('alive');
+
+    if (Data) {
+        setPrimaryColor(JSON.parse(Data));
+    }
+}, []);
+  useEffect(() => {
+    const Data = localStorage.getItem('alive');
+
+    if (Data) {
+        setSecondaryColor(JSON.parse(Data));
+    }
+}, []);
+
+  useEffect(() => {
+    const fetchDataFromApi = async () => {
+      try {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbz5MaS11pgUeKkrXBXricCRDD71zmPapnT0yeeq75mcTpW7ivy_sVGSK9uf9fajK79T/exec');
+        const data = await response.json();
+
+        const primaryColorItem = data.data.find(item => item.MATCH === 'Primary Color');
+        const secondaryColorItem = data.data.find(item => item.MATCH === 'Secondary Color');
+
+        if (primaryColorItem) {
+          setPrimaryColor(primaryColorItem.MAP);
+        }
+
+        if (secondaryColorItem) {
+          setSecondaryColor(secondaryColorItem.MAP);
+        }
+      } catch (error) {
+        console.error('Error fetching data from API:', error);
+      }
+    };
+
+    fetchDataFromApi();
+  }, []);
 
     return (
         <div className="elimframe10">
            {Fulldata.slice(0, 4).map((ele, index) => (
              ele.Player1 && ele.Player2 && ele.Player3 && ele.Player4 ? null : (
              <div className={`teamstats ${ele.Player1 && ele.Player2 && ele.Player3 && ele.Player4 ? 'allPlayersTrue1' : ''}`} key={index}>
-            <div className="group12">
+            <div className="group12"style={{ backgroundColor: primaryColor }}>
              <div className="wwcd">WWCD%</div>
                 <div className="percentage">33.85%</div>
                 </div>
-            <div className="alive">
+            <div className="alive"style={{ backgroundColor: secondaryColor }}>
             <div className={`player1 ${ele.Player1 ? 'player1True' : 'player1False'}`}></div>
             <div className={`player1 ${ele.Player2 ? 'player1True' : 'player1False'}`}></div>
             <div className={`player1 ${ele.Player3 ? 'player1True' : 'player1False'}`}></div>
             <div className={`player1 ${ele.Player4 ? 'player1True' : 'player1False'}`}></div>
             </div>
-          <div className="logoframe5">
+          <div className="logoframe5"style={{ backgroundColor: secondaryColor, borderColor: primaryColor }}>
           <img
                     className="topteamlogo"
                     src={ele.photo}
@@ -87,7 +127,7 @@ const Live = () => {
                 />
           </div>
           <div>
-          <div className="design11"></div>
+          <div className="design11"style={{ backgroundColor: secondaryColor }}></div>
           
           </div>
           </div>
