@@ -114,10 +114,10 @@ const Live = () => {
                 <div className="percentage">33.85%</div>
                 </div>
             <div className="alive"style={{ backgroundColor: secondaryColor }}>
-            <div className={`player1 ${ele.Player1 ? 'player1True' : 'player1False'}`}></div>
-            <div className={`player1 ${ele.Player2 ? 'player1True' : 'player1False'}`}></div>
-            <div className={`player1 ${ele.Player3 ? 'player1True' : 'player1False'}`}></div>
             <div className={`player1 ${ele.Player4 ? 'player1True' : 'player1False'}`}></div>
+            <div className={`player1 ${ele.Player3 ? 'player1True' : 'player1False'}`}></div>
+            <div className={`player1 ${ele.Player2 ? 'player1True' : 'player1False'}`}></div>
+            <div className={`player1 ${ele.Player1 ? 'player1True' : 'player1False'}`}></div>
             </div>
           <div className="logoframe5"style={{ backgroundColor: secondaryColor, borderColor: primaryColor }}>
           <img
