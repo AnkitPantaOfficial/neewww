@@ -117,6 +117,7 @@ const Alive = () => {
           </div>
           <div className="alivestatsall">
           {Fulldata.map((ele, index) => (
+             ele.TeamName && (
              <div className={`alivestatsbox ${ele.Player1 && ele.Player2 && ele.Player3 && ele.Player4 ? 'allPlayersTrue' : ''}`} key={index}>
               <div className="alivestatsboxcolor"style={{ backgroundColor: secondaryColor }}></div>
              <div className="aliverank">{index + 1}</div>
@@ -133,6 +134,7 @@ const Alive = () => {
                  
               </div>
           </div>
+          )
            ))}
           </div>
          </div>
