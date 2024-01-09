@@ -107,6 +107,7 @@ const Live = () => {
     return (
         <div className="elimframe10">
            {Fulldata.slice(0, 4).map((ele, index) => (
+            ele.TeamName && (
              ele.Player1 && ele.Player2 && ele.Player3 && ele.Player4 ? null : (
              <div className={`teamstats ${ele.Player1 && ele.Player2 && ele.Player3 && ele.Player4 ? 'allPlayersTrue1' : ''}`} key={index}>
             <div className="group12"style={{ backgroundColor: primaryColor }}>
@@ -131,7 +132,7 @@ const Live = () => {
           
           </div>
           </div>
-           )
+           ))
           ))}
         </div>
     );
