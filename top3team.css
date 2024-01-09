@@ -84,13 +84,13 @@
 }
 
 .player1{
-    width: 10px;
-    height: 20px;
+    width: 15px;
+    height: 25px;
     background-color: white;
-    border-radius: 20px;
     margin-left: 15px;
     position: relative;
-    left: 30px;
+    left: 18px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 .player1True {
     background-color: rgb(255, 0, 0);
